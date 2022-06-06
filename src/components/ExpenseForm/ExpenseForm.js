@@ -10,7 +10,6 @@ const ExpenseForm = () => {
   const amountChangeHandler = (e) => setEnteredAmount(e.target.value);
   const dateChangeHandler = (e) => setEnteredDate(e.target.value);
 
-  // English
   // - Prevent default behaviour of the form to prevent reloading the page
   // - Validate input fields to check if any of them is empty
   // - Declare of local constant to use user input values to persist the data of new expense with State variables values

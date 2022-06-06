@@ -1,11 +1,19 @@
-import './App.css';
-import ExpenseItem from './components/ExpenseItem/ExpenseItem';
-import ExpenseData from './data/ExpensesData'
+import Expenses from "./components/Expenses/Expenses";
+import Card from "./components/Card/Card";
+import NewExpense from "./components/NexExpense/NewExpense";
+import "./App.css";
+import "./components/Expenses/Expenses.css";
+
+// ↓ EXPENSES DATA
+import ExpenseData from "./data/ExpensesData";
 
 function App() {
   return (
     <>
-      {ExpenseData.map( el => <ExpenseItem expensedate={el} key={el.id.toString()}/>)}
+        <NewExpense />
+        <Card className="expenses">
+          <Expenses expenses={ExpenseData} />
+        </Card>
     </>
   );
 }

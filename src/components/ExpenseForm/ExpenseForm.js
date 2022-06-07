@@ -18,7 +18,7 @@ const ExpenseForm = () => {
   const submitHandler = (e) => {
     e.preventDefault();
 
-    if (enteredTitle === "" || enteredAmount === "" || enteredDate === "") {
+    if (!enteredTitle || !enteredAmount || !enteredDate) {
       alert("Please fill the form correctly.");
       return;
     }

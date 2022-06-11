@@ -3,10 +3,19 @@ import ExpenseForm from "../ExpenseForm/ExpenseForm";
 
 import "./NewExpense.css";
 
-const NewExpense = () => {
+const NewExpense = (props) => {
+
+  const createNewExpenseItem = (expenseItem) => {
+    const newId = `e${Number(props.lastExpenseId.slice(1)) + 1}`;
+    props.onCreateNewExpense({
+      id: newId,
+      ...expenseItem
+    })
+  };
+
   return (
     <div className="new-expense">
-      <ExpenseForm />
+      <ExpenseForm onSubmitExpenseForm={createNewExpenseItem} />
     </div>
   );
 };

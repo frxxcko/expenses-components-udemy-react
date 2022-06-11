@@ -12,6 +12,12 @@ const Expenses = (props) => {
         setSelectedYear(selectedYear)
     }
 
+    const listOfAvailableYears = () => {
+        const listOfTotalYears = props.expenses.map( expense => expense.date.getFullYear())
+        // ↓ filter duplicated years from listOfTotalYears
+        return listOfTotalYears.filter( (year, index) => listOfTotalYears.indexOf(year) === index).sort( (yearA, yearB) => yearB - yearA); 
+    }
+
     const renderConditionalExpenses = () => {
         let expensesToRender = props.expenses;
 
@@ -23,7 +29,7 @@ const Expenses = (props) => {
 
     return (
         <>
-            <ExpensesFilter onSelectYear={getSelectedYear} yearSelected={selectedYear} />
+            <ExpensesFilter onSelectYear={getSelectedYear} yearSelected={selectedYear} yearsList={listOfAvailableYears}/>
             {renderConditionalExpenses()}
         </>
     )

@@ -18,7 +18,7 @@ const Expenses = (props) => {
         return listOfTotalYears.filter( (year, index) => listOfTotalYears.indexOf(year) === index).sort( (yearA, yearB) => yearB - yearA); 
     }
 
-    const renderConditionalExpenses = () => {
+    const renderFilteredExpensesByYear = () => {
         let expensesToRender = props.expenses;
 
         if (!selectedYear.includes(initialState))
@@ -30,7 +30,7 @@ const Expenses = (props) => {
     return (
         <>
             <ExpensesFilter onSelectYear={getSelectedYear} yearSelected={selectedYear} yearsList={listOfAvailableYears}/>
-            {renderConditionalExpenses()}
+            {renderFilteredExpensesByYear()}
         </>
     )
 }

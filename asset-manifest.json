@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/expenses-project-react/static/css/main.29da6a5b.css",
-    "main.js": "/expenses-project-react/static/js/main.0de85667.js",
+    "main.css": "/expenses-project-react/static/css/main.640cba38.css",
+    "main.js": "/expenses-project-react/static/js/main.f6118d7b.js",
     "index.html": "/expenses-project-react/index.html",
-    "main.29da6a5b.css.map": "/expenses-project-react/static/css/main.29da6a5b.css.map",
-    "main.0de85667.js.map": "/expenses-project-react/static/js/main.0de85667.js.map"
+    "main.640cba38.css.map": "/expenses-project-react/static/css/main.640cba38.css.map",
+    "main.f6118d7b.js.map": "/expenses-project-react/static/js/main.f6118d7b.js.map"
   },
   "entrypoints": [
-    "static/css/main.29da6a5b.css",
-    "static/js/main.0de85667.js"
+    "static/css/main.640cba38.css",
+    "static/js/main.f6118d7b.js"
   ]
 }

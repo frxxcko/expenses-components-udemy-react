@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ExpensesChart from "../ExpenseChart/ExpenseChart";
 import ExpenseItem from "../ExpenseItem/ExpenseItem";
 import ExpensesFilter from '../ExpensesFilter/ExpensesFilter'
 
@@ -27,9 +28,12 @@ const Expenses = (props) => {
         return expensesToRender.sort((a, b) => new Date(b.date) - new Date(a.date)).map(expense => <ExpenseItem expense={expense} key={`expense_${expense.id}`} />);
     }
 
+    const filteredExp = renderFilteredExpensesByYear();
+
     return (
         <>
             <ExpensesFilter onSelectYear={getSelectedYear} yearSelected={selectedYear} yearsList={listOfAvailableYears}/>
+            <ExpensesChart expenses={filteredExp}/>
             {renderFilteredExpensesByYear()}
         </>
     )

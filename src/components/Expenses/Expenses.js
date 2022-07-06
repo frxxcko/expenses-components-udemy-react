@@ -22,7 +22,7 @@ const Expenses = (props) => {
     const renderFilteredExpensesByYear = () => {
         let expensesToRender = props.expenses;
 
-        if (!selectedYear.includes(initialState))
+        if (!selectedYear.includes(initialState) && !selectedYear.includes("All expenses"))
             expensesToRender = props.expenses.filter(expense => selectedYear.includes(expense.date.getFullYear()));
 
         return expensesToRender.sort((a, b) => new Date(b.date) - new Date(a.date)).map(expense => <ExpenseItem expense={expense} key={`expense_${expense.id}`} />);

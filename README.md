@@ -1,7 +1,9 @@
 # Expenses Project using React
 Deploy at: https://frxxcko.github.io/expenses-project-react
 
-<i>Note: this is not a finished website. 30/06/2022</i>
+<i>Note: this simple project is done! However, in continuos improvement.</i>
+
+#Last update 30/06/2022
 
 This project is still under development, I'm triying to build a full <strong>React Expenses App</strong> that implements all the fundamentals of React and more.
 

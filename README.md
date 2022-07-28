@@ -1,18 +1,42 @@
-# Expenses Project using React
+# Expenses App using React JS 
+
 Deploy at: https://frxxcko.github.io/expenses-project-react
 
-<i>Note: this is not a finished website. 30/06/2022</i>
+##### Note: this simple project is done! However, in continuos improvement.
 
-This project is still under development, I'm triying to build a full <strong>React Expenses App</strong> that implements all the fundamentals of React and more.
+##### Last update: 30/06/2022.
+## Run Locally
 
-Some of the topics you might see in this project as for today:
+Clone the project
+
+```bash
+  git clone https://github.com/frxxcko/expenses-project-react
+```
+
+Go to the project directory
+
+```bash
+  cd expenses-project-react
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+## Lessons Learned
+
 - Functional Components
 - State Handling
 - Two Way Binding
-- Dinamyc Rendering implementing <strong>map()</strong> method
+- Dinamyc Rendering implementing map() method
 - UX and Conditional rendering
-- Little bit of simple Styling, later I'll implement <strong>Material UI</strong> and/or <strong>Styled Components</strong> 
+- Little bit of simple Styling, later I'll implement Material UI and/or Styled Components
 
-# Goals to be acomplished in the next iteration
-- Add a chart that shows all expenses by month
-- Personalized experience and fully operational expenses app
+## Dev comments
+
+In this project I wanted to apply React JS fundamentals, this is a simple project that add expenses to a list and arrange them by date.
+
+This is the begin of my journey as I create more and more little projects to later build a bigger Frontend application with React JS. 
+But it's a long journey so grab a cup of your favourite beverage and reach out whenever you feel like!
